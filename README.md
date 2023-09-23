@@ -42,13 +42,10 @@
 
 ## Решение 1
 
-![backup]()
+![backup](https://github.com/v1us1885/hw-backup/blob/master/backup.png)
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+rsync -av --checksum --exclude='.*' ~/ /tmp/backup
+
 ```
 
 
@@ -61,11 +58,10 @@
 
 ## Решение 2
 
-![backup]()
-
+![crontab.png](https://github.com/v1us1885/hw-backup/blob/master/crontab.png)
+![finish.png](https://github.com/v1us1885/hw-backup/blob/master/finish.png)
 
 ```
-Поле для вставки кода...
 #!/bin/bash
 
 # Путь к домашней директории пользователя
@@ -84,9 +80,6 @@ else
     logger "Ошибка резервного копирования"
 fi
 
-....
-....
-....
 ```
 
 ------
